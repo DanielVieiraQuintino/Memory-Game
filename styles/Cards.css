@@ -11,17 +11,17 @@ main {
 }
 
 aside {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 aside,
 aside button {
   font-size: clamp(0.8rem, 1.2vw, 1.6rem);
 }
- 
+
 .gridCards {
   display: grid;
   width: 100%;
@@ -29,7 +29,7 @@ aside button {
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   margin-top: 2rem;
-  perspective: 100rem;  
+  perspective: 100rem;
 }
 
 .card {
@@ -38,7 +38,7 @@ aside button {
   border-radius: 0.6rem;
   position: relative;
   transition: transform 500ms, filter 200ms;
-  transform-style: preserve-3d; 
+  transform-style: preserve-3d;
 }
 
 .card:hover {
@@ -80,11 +80,11 @@ aside button {
 
 @media (min-widtch: 768px) {
   main {
-    min-width: 92rem;
+    min-width: 1000rem;
   }
 
   .gridCards {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     gap: 1.6rem;
     margin-top: 2.4rem;
   }
