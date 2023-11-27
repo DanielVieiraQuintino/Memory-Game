@@ -78,9 +78,9 @@ aside button {
   filter: saturate(0.1);
 }
 
-@media (min-widtch: 768px) {
+@media (min-width: 768px) {
   main {
-    min-width: 1000px;
+    min-width: 100rem;
   }
 
   .gridCards {
