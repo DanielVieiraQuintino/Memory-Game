@@ -2,7 +2,9 @@ function backPage() {
   if (gameIsFinished) {
     window.history.back();
   } else {
-    const playerResp = confirm("Deseja sair do jogo? Você perderá seu progresso!");
+    const playerResp = confirm(
+      "Deseja sair do jogo? Você perderá seu progresso!"
+    );
     if (playerResp) {
       window.history.back();
     }
@@ -81,7 +83,9 @@ function checkGameWin() {
       localStorage.setItem("@memoryGame:rank", JSON.stringify([userData]));
     }
 
-    alert(`Parabéns ${userData.name}, você venceu com tempo de ${userData.time}!`);
+    alert(
+      `Parabéns ${userData.name}, você venceu com tempo de ${userData.time}!`
+    );
   }
 }
 

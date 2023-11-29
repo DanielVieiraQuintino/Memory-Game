@@ -25,4 +25,4 @@ function navigateToRank() {
 
 inputName.addEventListener("input", validateInput);
 newGameForm.addEventListener("submit", handleSubmitNewGame);
-buttonRank.addEventListener("click", navigateToRank)
+buttonRank.addEventListener("click", navigateToRank);
