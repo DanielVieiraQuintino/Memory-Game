@@ -3,8 +3,9 @@ const newGameButton = document.querySelector(".newGameButton");
 const newGameForm = document.querySelector(".newGameForm");
 const buttonRank = document.querySelector(".buttonRank");
 
+
 function validateInput(event) {
-  if (event.target.value.length >= 3) {
+  if (event.target.value.length > 2) {
     newGameButton.removeAttribute("disabled");
   } else {
     newGameButton.setAttribute("disabled", "true");
@@ -13,10 +14,10 @@ function validateInput(event) {
 
 function handleSubmitNewGame(event) {
   event.preventDefault();
-  console.log(inputName.value);
   localStorage.setItem("@memoryGame:playerName", inputName.value);
   inputName.value = "";
   window.location.href = "pages/cards.html";
+  newGameButton.setAttribute("disabled", "true");
 }
 
 function navigateToRank() {

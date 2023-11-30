@@ -65,7 +65,7 @@ function createCards() {
 
 function checkGameWin() {
   const disabledCards = document.querySelectorAll(".disabledCard");
-  if (disabledCards.length === 24) {
+  if (disabledCards.length === 2) {
     clearInterval(timerIntervalID);
     gameIsFinished = true;
 
@@ -75,6 +75,7 @@ function checkGameWin() {
     };
 
     const storageRank = JSON.parse(localStorage.getItem("@memoryGame:rank"));
+    console.log(storageRank);
 
     if (storageRank) {
       const rankData = [...storageRank, userData];
